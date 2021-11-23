@@ -3,6 +3,7 @@ target/
 .DS_Store
 .bloop/
 .metals/
+metals.sbt
 .scalafmt.conf
 .vscode/
 cacert.pem
