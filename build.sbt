@@ -12,6 +12,7 @@ lazy val root = (project in file("."))
 .enablePlugins(DockerPlugin, JavaAppPackaging)
   .settings(
     name := "oldAkkaHttp",
+    // dockerExposedPorts ++= Seq(9000, 9443),
     libraryDependencies += scalaTest % Test,
     libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-http"   % AkkaHttpVersion,
@@ -26,5 +27,6 @@ lazy val root = (project in file("."))
   )
 
 scalacOptions += "-Ypartial-unification"
+
 
 // See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.

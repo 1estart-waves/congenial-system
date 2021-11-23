@@ -162,7 +162,7 @@ object Hello extends App {
   )
   // Http()
   Http()
-    .bindAndHandle(route, "127.0.0.1", 9000)
+    .bindAndHandle(route, "0.0.0.0", 9090)
   // , connectionContext = https)
 
 }
